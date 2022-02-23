@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  --Grayish-Blue: #4e5d73;
+  --Dark-Grayish-Blue: #323a49;
+
+  --primary-font: 'Manrope', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #202733;
+  font-family: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  background-color: var(--Dark-Grayish-Blue);
+  text-align: center;
+  max-width: min(90%, 54rem);
+  width: 54rem;
+  height: 33rem;
+  box-shadow: 3rem 5rem 8rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  padding: 4.8rem;
+
+  position: relative;
+}
+
+.heading {
+  color: var(--Neon-Green);
+  font-size: 1.3rem;
+  line-height: 17px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.quote {
+  color: var(--Light-Cyan);
+  font-size: 2.8rem;
+  line-height: 38px;
+  letter-spacing: -0.3px;
+  margin-bottom: 4rem;
+}
+
+.quote-line {
+  margin-bottom: 4rem;
+}
+
+.quote-line img {
+  width: 100%;
+}
+
+.advice-btn {
+  background-color: var(--Neon-Green);
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  position: absolute;
+  left: 50%;
+  bottom: -18%;
+  transform: translate(-50%, -50%);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.advice-btn:hover {
+  background-color: #53ffaa;
+  box-shadow: 0 0 4rem #53ffaa;
+}
+
+.advice-btn img {
+  width: 2.4rem;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 71%, 82%);
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 4rem 2.4rem;
+  }
+  .heading {
+    font-size: 1.1rem;
+  }
+
+  .quote {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .quote-line {
+    margin-bottom: 3.2rem;
+  }
+
+  .attribution {
+    font-size: 1rem;
+  }
+}
